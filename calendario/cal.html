@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Calendario cutre</title>
+</head>
+<body>
+  <script>
+
+    var fecha = new Date;
+    var meses = new Array();
+    meses["enero"]=31;
+    meses["febrero"]=28;
+    meses["marzo"]=31;
+    meses["abril"]=30;
+    meses["mayo"]=31;
+    meses["junio"]=30;
+    meses["julio"]=31;
+    meses["agosto"]=31;
+    meses["septiembre"]=30;
+    meses["octubre"]=31;
+    meses["noviembre"]=30;
+    meses["diciembre"]=31;
+
+
+    esteMes=fecha.getMonth();
+    hoy=fecha.getDate();
+    diaSemana=fecha.getDay();
+
+    
+    var countDays = 1;
+    var calendar="<table border='1'><tr><td>L</td><td>M</td><td>X</td><td>J</td><td>V</td><td>S</td><td>D</td><tr/>";
+
+        for(i=0;i<6;i++){
+            calendar+="<tr>";
+
+                
+            for(f=0;f<7;f++){
+                calendar+="<td>"+ (fecha.getDate() + countDays++) +"</td>";
+                
+            }
+            if (fecha.getMonth()=0 == meses.get){ //metodo array buscar valor... o algo...
+
+            }
+
+            calendar+="</tr>";
+        }
+    document.write(calendar);
+    document.write("lalalalalalala");
+
+
+
+  
+  
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,12 @@
+string, array, saber que es json y como se manipula, pero no la clase json
+
+recorrer variables definidas en json, recorrer arays, instertar en arrays, borrar en array...
+
+dom: modificar elementos, borrar elementos...
+
+controles de formularios, programar onclick
+checkbox, radiobuttion, select
+
+clases (articulo y carrito), definir los metodos, gestion eventos, listeners,
+
+bom: window.onload, 

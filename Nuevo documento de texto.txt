@@ -1,0 +1,7 @@
+simulamos con arrays
+
+cada vez que cambie el pais, que cambie las ciudades del país
+
+Espanya=[Valencia, Madrid,Barcelona]
+Francia=[Paris,Toulouse,Limoges]
+Italia=[Florencia,Venecia,Roma]

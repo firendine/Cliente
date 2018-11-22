@@ -1,0 +1,87 @@
+<script>
+    "use strict"
+    
+function suma(a,b){
+    return a+b;
+}
+
+console.log(suma(1,2)); //normal -> 3
+
+console.log(suma(1)); //falta un parametro -> NaN
+
+console.log(suma(1,2,3)); //más parametros -> los parametros sobrantes se omiten y suma las dos primeras
+
+
+function suma2(a,b){
+
+    if (b===undefined){
+        return a;
+    }else{
+        return a+b;
+    }
+}
+
+console.log(suma2(1));
+
+
+function suma3(){
+    console.log(arguments.length); //return a+b
+}
+suma3(1,2,3,4,5,6,7,8,9);
+suma3(1,2,6,7,4,5,6);
+
+
+function suma4(){
+    console.log(arguments[0]);
+    console.log(arguments[1]);
+}
+
+suma4("pepe", true);
+suma4(1,2,3,4,5,6);
+
+let misuma=function suma(a,b){
+    return a+b;
+};
+
+console.log(misuma(5,9));
+
+function mensaje(){
+    console.log("Hola");
+}
+
+//setInterval(mensaje,2000); //funciones como parametro
+
+//setInterval(function(){console.log("Adios")},2000);
+
+function sum(a,b,c,...datos){ //PARAMETROS REST
+    console.log(datos.length);
+    console.log(datos[datos.length-1]);
+}
+
+sum(1,2,3,4,5,6,"pepe");
+
+
+function sumadefecto(a,b=10){
+    return a+b;
+}
+
+console.log(sumadefecto(1));
+
+
+let cadena1=`cadena de texto`;
+let cadena2="cadena de texto";
+let cadena3=`linea 1 de la cadena
+            linea 2 de la cadena`;
+
+            console.log(cadena3);
+
+
+let f= new Date();
+console.log(f);
+console.log(f.getDate()+"/"+f.getMonth()+"/"+f.getFullYear());
+
+
+let f2 = new Date('2018','09','28'); //pone la fecha que quieras yyyy-MM-dd
+
+console.log(f2);
+</script>

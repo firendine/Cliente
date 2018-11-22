@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<script>
+
+function Articulo(cod,nom,des,pvp){
+    this.codigo = cod;
+    this.nombre = nom;
+    this.descripcion = des;
+    this.precio = pvp;
+
+}
+
+function Carrito(num, fecha){
+    this.numero = num;
+    this.fecha = fecha;
+    this.articulos = [];
+}
+
+Carrito.prototype.anyadoArticulo=function(Articulo){
+    this.articulos.push(Articulo);
+}
+
+Carrito.prototype.verCarrito=function(){
+    this.articulos.map(function(n){
+        
+    });
+}
+let micarrtio = new Carrito(25);
+
+
+    //////////////////
+    ///////////////////
+    //////////////////
+
+    
+
+
+        for(i=0;i<lista.length;i++){
+            texto=lista.options[i].text;
+            valor=lista.options[i].value;
+            seleccionado = lista.options[i].selecteD
+            console.log("Textos:"+ texto + " Valor:"+valor + " Seleccionado:"+ seleccionado)
+        }
+    }
+
+
+</script>
+<body>
+        <select id="productos">
+                <option value="dvd">DVD</option>
+                <option value="movil">Movil</option>
+                <option value="tv">TV</option>
+            </select>
+            <input type="button" value="comprar"> 
+            <input type="button" value ="ver carrito">   
+    
+</body>
+</html>

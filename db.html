@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <button name="boton" class="boton">yup</button>
+    <script  language="javascript" type="text/javascript">
+        $('.boton').click( function() {
+
+            $.ajax({
+                url: 'datos.php',
+                type: 'POST',
+
+                data: "nombre=wolas&apellido=adioh",
+                //data:{JSON},
+                //dataType: 'JSON',
+                success: function(data){
+                    $('.resultados').html(data);
+                    //$('<h2>'+'HOLA'+'<h2>').appendTo('body');
+                    //$('.resultados').html('');
+                    //$(datos).find('item').each(function(){
+                    //$('<li></li>').html( $(this).text() ).appendTo('.resultados');
+                    //});
+                },
+                error: function(jqXHR, status, error){
+                    //codigo error
+                },
+                complete: function(jqXHR, status){
+                    //peticion preocesada
+
+                }
+            }); 
+
+        });
+
+       
+    </script>
+    <!--
+    $.ajax({ // la URL para la petición
+        url : 'post.php', // la información a enviar 
+
+        data : { id : 123 }, // (también es posible utilizar una cadena de datos)
+
+        type : 'GET', // especifica si será una petición POST o GET
+
+        dataType : 'json', // el tipo de información que se espera de respuesta
+
+        success : function(json) {  // código a ejecutar si la petición es satisfactoria;
+                                    // la respuesta es pasada como argumento a la función
+            
+                                 $('<h1/>').text(json.title).appendTo('body');
+                                 $('<div class="content"/>')
+                                 .html(json.html).appendTo('body');
+                                },
+
+        error : function(jqXHR, status, error) { // código a ejecutar si la petición falla;
+                                                 // son pasados como argumentos a la función
+                                                 // el objeto jqXHR (extensión de XMLHttpRequest), un texto con el estatus
+                                                 // de la petición y un texto con la descripción del error que haya dado el servidor
+
+                                                 alert('Disculpe, existió un problema');
+                                                },
+
+        complete : function(jqXHR, status) { // código a ejecutar sin importar si la petición falló o no
+                                                alert('Petición realizada');
+                                            }
+    });
+-->
+
+<div class="resultados">Esperando respuesta</div>
+    <div style="clear:both"></div>
+    
+</body>
+</html>

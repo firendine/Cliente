@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<script>
+    function filtrarCiudad(){
+        listaPaises= document.getElementById("paises");
+        listaCiudades= document.getElementById("ciudades");
+
+
+        
+        if(listaPaises)
+
+        for(i=0;i<lista.length;i++){
+            texto=lista.options[i].text;
+            valor=lista.options[i].value;
+            seleccionado = lista.options[i].selecteD
+            console.log("Textos:"+ texto + " Valor:"+valor + " Seleccionado:"+ seleccionado)
+        }
+    }
+
+
+</script>
+<body>
+        <select id="paises">
+                <option value="01">Espanya</option>
+                <option value="02">Francia</option>
+                <option value="03">Italia</option>
+            </select>
+            <input type="button" value="Filtrar" onClick="filtrarCiudad()">    
+
+            <select id="ciudades">
+                    <option value="011">Valencia</option>
+                    <option value="012">Barcelona</option>
+                    <option value="013">Madrid</option>
+                    <option value="021">Paris</option>
+                    <option value="022">Toulousse</option>
+                    <option value="023">Limoges</option>
+                    <option value="031">Roma</option>
+                    <option value="032">Florencia</option>
+                    <option value="033">Venecia</option>
+                </select>
+    
+</body>
+</html>

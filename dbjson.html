@@ -1,0 +1,57 @@
+<body>
+    <p>Datos</p>
+
+
+    
+</body>
+<script>
+    /*
+    window.addEventListener('load', function(){
+        console.log("cargada");
+    });
+*/
+    url="https://restcountries.eu/rest/v2";
+    url2="";
+    method = "GET";
+    
+    Peticion=new XMLHttpRequest();
+
+    Peticion.open(method,url, true);
+
+    /*
+    Peticion.onload=function(){
+        console.log(Peticion.responseText);
+
+        
+    }
+       // Peticion.send();
+
+    
+    Peticion.addEventListener('load',function(){
+        if(Peticion.status==200){
+            console.log("wenas :)");
+            mispaises=JSON.parse(Peticion.responseText);
+            console.log(mispaises);
+            
+        }else{
+            console.log("ERROR");
+            alert("Datos recibidos con o sin ERROR")
+        }
+    })
+    Peticion.send();
+    */
+
+
+    Peticion.addEventListener('load',()=>{
+        if(Peticion.status==200){
+            console.log("wenas :)");
+            mispaises=JSON.parse(Peticion.responseText);
+            console.log("Lista de paises fat arrow");
+            console.log(mispaises);
+            
+        }else{
+            console.log("ERROR");
+            alert("Datos recibidos con o sin ERROR")
+        }
+    });
+    </script>

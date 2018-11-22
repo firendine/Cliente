@@ -1,0 +1,52 @@
+Carrito
+  numero
+  fecha
+  articulos=[]__
+ _______________|
+|
+V
+Articulo
+  cod
+  nombre
+  descripcion
+  precio
+
+
+
+
+function articulo (cod, nom, descrip, pvp){
+	this.codigo=cod;
+	this.nombre=nom;
+	this.descripcion=descrip;
+	this.precio=pvp;
+}
+
+function carrito(num, fecha){
+	this.numero=num;
+	this.fecha=fecha;
+	this.articulos=[];
+}
+
+
+
+carrito.prototype.anyadoArticulo=function(articulo){
+	this.articulo.push(articulo);
+
+}
+
+
+carrito.prototype.verCarrito= function(){
+	this.articulos.map(function(n))
+
+}
+
+
+ ---------
+| COMPRAR | -> lista.value
+ --------- 
+		split--------------------
+				        |
+				        V
+		articulo = new Articulo( )
+		micarrito.anyadirArticulo(articulo)
+

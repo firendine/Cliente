@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    
+    var fecha = new Date;
+
+dias=["L","M","X","J","V","S","D"]
+meses=[31,28,31,30,31,30,31,31,30,31,30,31];
+fecha.setDate(1);
+diauno = fecha.getDay();
+diasMes= meses[fecha.getMonth()];
+
+ 
+ 
+ 
+  if(diauno == 0){
+      diauno=7;
+  }
+
+cal= "<table border='1'><tr>";
+
+for(i=0; i<7; i++){
+    cal+="<td>"+ dias[i];
+}
+
+blancos= diauno-1; //al indice del dia de la semana le quitas 1 para dejarlos en blanco a partir del anterior del dia actual
+cal+="<tr>";
+
+for(i=1; i<=blancos+diasMes; i++){
+    if(i<=blancos){ //si se cumple, estamos en la zona blanca(antes del día 1 del mes)
+        cal+="<td>";
+    }else{
+        cal+= "<td>" + (i-blancos);
+    }
+    if(i%7==0){
+        cal+="<tr>";
+    }
+}
+
+
+cal+="</table>"
+
+document.write(cal);
+    
+    
+    </script>
+    
+</body>
+</html>

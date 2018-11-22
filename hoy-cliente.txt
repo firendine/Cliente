@@ -1,0 +1,20 @@
+AJAX -> nada de teoría, solo práctica.
+
+
+saber arrancar json server
+
+
+
+
+
+array.map(function(n){
+
+})
+
+
+array.map(function(n,m)=>{ //los parametros pueden ser sin parentesis-> 'n' o '(n)'
+
+})
+
+
+setInterval(function(){dentro},tiempo) //ejecuta el tiempo que indiques en dentro

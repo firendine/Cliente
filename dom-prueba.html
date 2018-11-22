@@ -1,0 +1,80 @@
+<body>
+    <div id="capaInicial">
+        <p id="p0">Parrafo0 en capa 0</p>
+        <p id="p1">Parrafo1 en capa 0</p>
+        <p id="p2">Parrafo2 en capa 0</p>
+    </div>
+
+    <div id="c1">
+        <p id="p0">Parrafo0 en capa 1</p>
+        <p id="p1">Parrafo1 en capa 1</p>
+        <p id="p2">Parrafo2 en capa 1</p>
+    </div>
+    <div id="c2">
+        <p id="p0">Parrafo0 en capa 2</p>
+        <p id="p1">Parrafo1 en capa 2</p>
+        <p id="p2">Parrafo2 en capa 2</p>
+    </div>
+</body>
+<script>
+
+    capa0 = document.getElementById("c0");
+    console.log(capa0);
+
+
+    //hijos=capa0.childNodes;
+
+    //console.log(hijos[2]);
+    capas = document.getElementsByTagName("div");
+
+
+
+    for (i = 0; i < capas.length; i++) {
+        console.log(capas[i].id);
+        alert(capas[i].id);
+    }
+
+    miparrafo = document.createElement("p");
+
+    miimagen = document.createElement("img");
+
+    miimagen.src = "wallpaper.png";
+    miimagen.width = "500";
+    c1.appendChild(miimagen);
+    ruta = prompt("Dime imagen");
+    document.getElementsByTagName("img")[0].src = ruta;
+
+
+
+
+
+
+    miparrafo.id = "9999";
+    console.log(miparrafo);
+
+    mitexto = document.createTextNode("lalalala :D");
+    console.log(mitexto);
+
+    parrafo2 = miparrafo.appendChild(mitexto);
+    console.log(parrafo2);
+
+    document.body.appendChild(parrafo2);
+    capa = document.getElementById("capaInicial");
+    capa.appendChild(parrafo2);
+
+    p = document.getElementById("p1");
+    p.firstChild.nodeValue = "00000k gold :D";
+
+    p.setAttribute("align", "right");
+
+
+
+    console.log(p.getAttribute("align"));
+
+    console.log(p.attributes.getNamedItem("align"));
+
+    console.log(p.align);
+
+
+
+</script>

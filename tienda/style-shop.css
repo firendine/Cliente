@@ -1,0 +1,23 @@
+div{
+    border:solid;
+    border-color:yellow;
+    
+}
+.item{
+width:200px;
+height: 300px;
+border:solid;
+border-color: blue;
+float: left;
+}
+
+img{
+    width:180px;
+    border:solid;
+    border-color: red;
+}
+.stock-container{
+    height: 200px;
+    border:solid;
+    border-color: green;
+}
