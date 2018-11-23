@@ -1,0 +1,20 @@
+Jquery
+_______
+
+w3schools.com/jquery/jquery_ref_events.asp
+___________
+Selectores | Contruir elementos DOM
+Eventos    | $(" ").append("Padre");
+Ajax	   | $(elemento).click(function({});  //se elminina el on de onClick en Jquery
+-----------  $(evento).on(evento,function(){}); //Event listener pasa a ser on()
+
+
+gestionar todo el codifo con solo una funcion, seleccionando todos los botones y aplicando la misma funcion, sabrá a que artivculo se refiere con this.
+
+con el metodo on en jquery permite, en vez de decirle a un elemento que asigne el evento, permite decirle a un elemento padre que asigne el evento con el on. Es decir, que los elementos hijos hereden el evento. Se puede extender al elemento padre y a los hijos.
+
+
+$(selector).on(event,[childSelector],[data],function,map)
+
+$('#contenedor').on(click," .btnVerArticulo", function(){});
+
