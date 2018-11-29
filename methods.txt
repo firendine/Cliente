@@ -1,0 +1,22 @@
+	   / text()
+getContent | html()
+	   \ val()
+
+$(elemento).val()
+
+
+
+jquery HTML
+
+jquery add
+
+jquery html/css methods
+
+prepend()
+append()
+after()
+before()
+remove()
+empty()
+css()
+animate() //setInterval()
