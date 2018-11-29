@@ -20,3 +20,19 @@ remove()
 empty()
 css()
 animate() //setInterval()
+
+addclass()
+remoeclass()
+toggleclass()
+
+atributos
+.css
+$(elemento).css('atributo', valor)
+
+
+children()
+find()
+
+parent()
+children()
+posiciones padre, hijo y hermanos
