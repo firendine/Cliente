@@ -1,0 +1,34 @@
+2 peticiones ajax
+1 para las imagenes del carousel
+2 para las categorias
+
+
+jqueryUI
+jquery.com
+jqueryui.com -> draggable
+	     -> droppable
+	     -> sortable
+	     -> accordion
+	     -> combobox
+	     -> controlgroup
+	     -> datepicker
+	     -> progressbar
+	     -> spinner
+	     -> slider
+	     -> tabs
+	     -> tooltip
+		. . .
+
+__________________________________
+__________________________________
+
+bootstrap_modal
+bootsnip
+
+
+__________________________________
+npm (gestor de paquetes) \
+webpack			  | Lo gestiona
+ ->ES5			  | el framework
+ ->ES6			  |
+Typescript		 /
