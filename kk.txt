@@ -1,0 +1,40 @@
+JSON
+Pizzas = [{...}
+	  {...}
+	  {Ingredientes:[{...}{...}{...}]}]
+	 ]
+
+
+window.onload{
+
+	lista.addEventListener("change", function(){
+
+		P1/P2/
+	
+	)
+
+	miPizza=Pizzas.filter(p=> P.codigo==lista.value)
+	if(miPizza.codigo != 'P0'){
+		crear ...
+	}
+}
+
+
+ingredientes="";
+total=0;
+
+	miPizza.ingredientes.map (P=>0{
+		ingredientes= ingredientes+P.ingrediente+"<br>";
+		total= total+ parseFloat (P.total);
+	}
+
+
+/////////////////////////////////////
+/////////////////////////////////////
+
+
+	juegos= /* ... */ Imagenes Tagname
+	imagenes[P].addEventListener
+	this
+
+
